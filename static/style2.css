@@ -1,0 +1,190 @@
+:root{
+    /* variaveis para cor */
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-fundo: #FAFBFF;
+}
+
+*{
+    /* muda todo o site / tira toda a margem*/
+    margin: 0px;
+    /* espaçamento interno */
+    padding: 0px;
+    /* tempo de transição quando passar o mouse */
+    transition: all 1s;
+}
+
+#header{
+
+/*  cor de fundo do header*/
+    background-color: var(--cor-topo);
+    /* deixa os itens em bloco flexiveis */
+    display: flex;
+    /* deixa um itemem cada ponta */
+    justify-content: space-between;
+    /* centralizar os itens */
+    align-items: center;
+}
+
+#header nav a{
+    /* modo cascata para chegar até o A do html */
+    /* tira a decoração da letra */
+    text-decoration: none;
+    /* troca a cor da letra */
+    color: var(--cor-preta);
+}
+
+#header nav a:hover{
+    /* para quando passar o mouse, mudar algo */
+    /* para trocar a cor da letra */
+    background-color: var(--cor-principal);
+    /* mudar a cor da letra quando passar o mouse */
+    color: var(--cor-branca);
+    /* para deixar a borda mais redonda */
+    border-radius: 20px;
+
+
+}
+/* não fiz a mesma coisa do hover, pq está lincado ao benefícios do html e ele está em classe */
+.marginLateral{
+    /* para dar espaço entre as coisas do header */
+    margin: 0px 20px;
+}
+
+main #banner{
+    background-color: #b3e5e5;
+    /* porcentagem que a imagem vai pegar na tela */
+    height: calc(100vh - 116px);
+    /*quantas vezes a imagem vai se repetir  */
+    background-repeat: no-repeat;
+    /* para mater ele centralizado */
+    background-position: center center;
+    /* preenche toda a tela */
+    background-size: cover;
+    /* para deixar a escrita do banner no centro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-preta);
+}
+
+    .marginCimaBaixo{
+        margin: 20px 0px;
+    }
+    main #banner h1{
+        color: var(--cor-principal);
+        font-size: 2em;
+    }
+/* estilizar o botão do banner */
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+
+}
+/* para aparecer uma mãozinha quando clicar no botão */
+main #banner button{
+    cursor: pointer;
+}
+/* para mudar o padding de todos, é só colocar #header, e o none */
+
+#BemVindo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#BemVindo p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#BemVindo #BoasVindas h3{
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+main #beneficios{
+    background-color: var(--cor-fundo);
+}
+
+main #beneficios #beneficios-nossosBeneficios{
+    text-align: center;
+    color: var(--cor-principal);
+}
+
+main #beneficios-servicos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 30px;
+    color: var(--cor-principal);
+}
+
+#rodape{
+    background-color: var(--cor-topo);
+    text-align: center;
+}
+
+
+ #header, main #banner button, #bemVindo div, #rodape{
+    padding: 20px;
+ }
+
+ main #form #form-texto{
+    text-align: center;
+ }
+
+ main #form #form-formulario form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ main #form #form-formulario form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+ }
+
+ main #form #form-formulario form button,
+ .formulario .formulario-form form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 380px;
+    cursor: pointer;
+    display: block;
+ }
+ .cadastro{
+    margin-top: 10px;
+ }
+ .cadastro a{
+    color: var(--cor-branca);
+    text-decoration: none;
+ }
+
+ main #form #form-formulario{
+    background-repeat: no-repeat;
+    background-size:contain ;
+ }
+
+ main #form.form-sem-cachorro #form-formulario{
+    background-image: none;
+ }
+ .formulario .formulario-form form a{
+    color: var(--cor-preta);
+    text-decoration: none;
+    text-align: center;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>WriteBook</title>
+</head>
+<body>
+    <header id="header">
+        <img src="static/Logo2.png" alt="Logo">
+        <nav>
+            <a href="paginacadastro.html"><button class="botao">Assinatura</button></a>
+        </nav>
+    </header>
+    <main>
+        <section id="banner"></section>
+
+        <section id="sobre">
+            <h1>Quem somos nós?</h1>
+            <br><br>
+            <p>A WriteBook é um site para leitura dos melhores e mais conhecidos livros clássicos, de ficção
+                e romance, com o melhor preço de assinatura do mercado. Desde 2022 fazemos parte dos
+                sonhos de mais de 50.000 usuários e queremos fazer do seu também!</p>
+        </section>
+        
+        <section id="form">
+            <div id="form-texto">
+                <h3>Já tem assinatura?</h3>
+            </div>
+
+            <div id="form-formulario">
+                <form action="">
+                    <div class="form-formulario-email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required placeholder="Informe seu e-mail">
+                    </div>
+                    <div class="form-formulario-senha">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" required placeholder="Informe a sua senha" minlength="10">
+                    </div>
+                    <div class="form-formulario-submit">
+                        <button type="button" onclick="location.href = 'paginalivros.html'">Entrar</button>
+                    </div>
+                    <div>
+                        <a href="paginacadastro.html" type="button">Ainda não? Cadastre-se</a>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+
+
+    </main>
+<br><br>
+    <footer id="rodape-inicio">
+        <div class="rodape-contatos">
+            <div class="itens">
+                <img src="static/insta.png" alt="instagram">
+                <h4>@write_book</h4>
+            </div>
+            <div class="itens">
+                <img src="static/email.png" alt="email">
+                <h4>writebook@gmail.com</h4>
+            </div>
+        </div>
+
+        <div class="rodape-nome">
+            <h2>WriteBook</h2>
+        </div>
+    </footer>
+</body>
+</html>
